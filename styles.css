@@ -89,6 +89,12 @@ code{
   border: 1px solid var(--border);
 }
 .brand-mark.small{ width: 28px; height: 28px; border-radius: 10px; }
+.brand-logo{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
 .brand-name{
   font-size: 13px;
   letter-spacing: .02em;
