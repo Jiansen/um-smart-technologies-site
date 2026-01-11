@@ -9,10 +9,11 @@
 
 const COMPANY = {
   name: "UM SMART TECHNOLOGIES LTD",
-  salesEmail: "sales@example.com",
+  salesEmail: "umsmarttechnologies@outlook.com",
   // Use international format without "+" and spaces for wa.me (example below).
-  whatsappE164: "000000000000",
-  whatsappDisplay: "+000 000 0000",
+  // User provided: 00447771122999  -> wa.me needs country code without leading 00.
+  whatsappE164: "447771122999",
+  whatsappDisplay: "+44 777 1122 999",
 };
 
 /**
@@ -110,7 +111,9 @@ function quoteMailtoForProduct(product) {
 }
 
 function buildWhatsAppLink(product) {
-  const n = String(COMPANY.whatsappE164 || "").replace(/[^\d]/g, "");
+  let n = String(COMPANY.whatsappE164 || "").replace(/[^\d]/g, "");
+  if (n.startsWith("00")) n = n.slice(2);
+  n = n.replace(/^0+/, "");
   const lines = [
     `Hello ${COMPANY.name}, I’d like a quote.`,
     product ? `Model: ${product.brand} ${product.model}` : "",
