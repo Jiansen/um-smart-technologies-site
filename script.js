@@ -21,18 +21,42 @@ const COMPANY = {
  * You can add/remove items here.
  *
  * Images sources:
- * - Apple: local downloads from apple.com iPhone page.
+ * - Apple: local downloads from apple.com iPhone page + Apple Newsroom images.
  * - Samsung: Samsung US product feed (official CDN) + Wikimedia for older gaps.
  * - Nokia: official HMD Nokia all-phones page (Contentful CDN).
  */
 const CATALOG = {
   Apple: [
+    // 2025 (latest)
     { model: "iPhone 17 Pro Max", imageUrl: "assets/phones/apple-iphone-17-pro.jpg" },
     { model: "iPhone 17 Pro", imageUrl: "assets/phones/apple-iphone-17-pro.jpg" },
     { model: "iPhone Air", imageUrl: "assets/phones/apple-iphone-air.jpg" },
     { model: "iPhone 17", imageUrl: "assets/phones/apple-iphone-17.jpg" },
-    { model: "iPhone 16", imageUrl: "assets/phones/apple-iphone-16.jpg" },
+
+    // 2024
+    { model: "iPhone 16 Pro Max", imageUrl: "https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/tile/Apple-iPhone-16-Pro-hero-240909-lp.jpg.og.jpg?202512190714" },
+    { model: "iPhone 16 Pro", imageUrl: "https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/tile/Apple-iPhone-16-Pro-hero-240909-lp.jpg.og.jpg?202512190714" },
+    { model: "iPhone 16 Plus", imageUrl: "https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/tile/Apple-iPhone-16-lineup-240909-lp.jpg.og.jpg?202512190732" },
+    { model: "iPhone 16", imageUrl: "https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/tile/Apple-iPhone-16-lineup-240909-lp.jpg.og.jpg?202512190732" },
     { model: "iPhone 16e", imageUrl: "assets/phones/apple-iphone-16e.jpg" },
+
+    // 2023
+    { model: "iPhone 15 Pro Max", imageUrl: "https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.og.jpg?202512190731" },
+    { model: "iPhone 15 Pro", imageUrl: "https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.og.jpg?202512190731" },
+    { model: "iPhone 15 Plus", imageUrl: "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/tile/Apple-iPhone-15-lineup-hero-230912.jpg.og.jpg?202512190711" },
+    { model: "iPhone 15", imageUrl: "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/tile/Apple-iPhone-15-lineup-hero-230912.jpg.og.jpg?202512190711" },
+
+    // 2022
+    { model: "iPhone 14 Pro Max", imageUrl: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907.jpg.og.jpg?202512190808" },
+    { model: "iPhone 14 Pro", imageUrl: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907.jpg.og.jpg?202512190808" },
+    { model: "iPhone 14 Plus", imageUrl: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-hero-220907.jpg.og.jpg?202512190712" },
+    { model: "iPhone 14", imageUrl: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-hero-220907.jpg.og.jpg?202512190712" },
+
+    // 2021
+    { model: "iPhone 13 Pro Max", imageUrl: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_design_09142021.jpg.og.jpg?202512190731" },
+    { model: "iPhone 13 Pro", imageUrl: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_design_09142021.jpg.og.jpg?202512190731" },
+    { model: "iPhone 13", imageUrl: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_design_09142021.jpg.og.jpg?202512190731" },
+    { model: "iPhone 13 mini", imageUrl: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_design_09142021.jpg.og.jpg?202512190731" },
   ],
   Samsung: [
     // Galaxy S (latest ~5 years)
