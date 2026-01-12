@@ -25,6 +25,13 @@ const COMPANY = {
  * - Nokia images pulled from HMD all-phones page (Contentful CDN).
  */
 const CATALOG = {
+  Apple: [
+    { model: "iPhone 17 Pro", imageUrl: "assets/phones/apple-iphone-17-pro.jpg" },
+    { model: "iPhone Air", imageUrl: "assets/phones/apple-iphone-air.jpg" },
+    { model: "iPhone 17", imageUrl: "assets/phones/apple-iphone-17.jpg" },
+    { model: "iPhone 16", imageUrl: "assets/phones/apple-iphone-16.jpg" },
+    { model: "iPhone 16e", imageUrl: "assets/phones/apple-iphone-16e.jpg" },
+  ],
   Samsung: [
     {
       model: "Galaxy Z Fold7",
@@ -248,6 +255,7 @@ function wireContact() {
 
 document.addEventListener("DOMContentLoaded", () => {
   wireContact();
+  renderRow("iphoneRow", "Apple");
   renderRow("samsungRow", "Samsung");
   renderRow("nokiaRow", "Nokia");
 
